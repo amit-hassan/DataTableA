@@ -1,3 +1,4 @@
+import 'package:datatable_a/datatable/model/column_data.dart';
 import 'package:flutter/material.dart';
 import 'package:datatable_a/datatable/table/datatable_a.dart';
 void main() {
@@ -39,7 +40,14 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: DataTableA(),
+        child: DataTableA(
+          columnData: [
+            ColumnData(
+                label: "Name",
+                name: "Name"
+            )
+          ],
+        ),
       ),
     );
   }

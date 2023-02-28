@@ -1,7 +1,13 @@
+import 'package:datatable_a/datatable/model/column_data.dart';
 import 'package:flutter/material.dart';
 
 class DataTableA extends StatefulWidget {
-  const DataTableA({Key? key}) : super(key: key);
+  List<ColumnData> columnData;
+
+  DataTableA({
+    Key? key,
+    required this.columnData
+  }) : super(key: key);
 
   @override
   State<DataTableA> createState() => DataTableAState();
