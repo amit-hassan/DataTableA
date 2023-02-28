@@ -1,7 +1,4 @@
 library datatable_a;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+export 'datatable/function/function.dart';
+export 'datatable/model/column_data.dart';
